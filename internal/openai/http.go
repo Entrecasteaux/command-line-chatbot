@@ -1,1 +1,1 @@
-// Copyrigh
+// Copyright 2023 Changkun Ou. All rights reserved
