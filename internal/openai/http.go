@@ -5,4 +5,7 @@
 package openai
 
 import (
-	"buf
+	"bufio"
+	"bytes"
+	"context"
+	"encod
