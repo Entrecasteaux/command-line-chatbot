@@ -11,4 +11,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"net/
+	"net/http"
+)
+
+func httpRequest[Req, Resp an
