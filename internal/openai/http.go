@@ -14,4 +14,5 @@ import (
 	"net/http"
 )
 
-func httpRequest[Req, Resp any](ctx context.Context, url string,
+func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp, error) {
+	
