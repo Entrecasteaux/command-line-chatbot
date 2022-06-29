@@ -15,4 +15,6 @@ import (
 )
 
 func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp, error) {
-	
+	b, _ := json.Marshal(in)
+
+	r,
