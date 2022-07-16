@@ -19,4 +19,6 @@ func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp
 
 	r, err := http.NewRequest(http.MethodPost, url, bytes.NewReader(b))
 	if err != nil {
-		return nil, fmt.Errorf("failed to create the r
+		return nil, fmt.Errorf("failed to create the request: %w", err)
+	}
+	r.Header.Set(
