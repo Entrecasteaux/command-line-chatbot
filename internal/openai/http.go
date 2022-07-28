@@ -22,4 +22,5 @@ func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp
 		return nil, fmt.Errorf("failed to create the request: %w", err)
 	}
 	r.Header.Set("Content-Type", "application/json; charset=UTF-8")
-	r.Header.Set("Authorization", fmt.Sprintf("Bearer %s",
+	r.Header.Set("Authorization", fmt.Sprintf("Bearer %s", apiKey))
+	resp, err := http.Defau
