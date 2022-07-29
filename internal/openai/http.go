@@ -24,3 +24,5 @@ func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp
 	r.Header.Set("Content-Type", "application/json; charset=UTF-8")
 	r.Header.Set("Authorization", fmt.Sprintf("Bearer %s", apiKey))
 	resp, err := http.DefaultClient.Do(r.WithContext(ctx))
+	if err != nil {
+		return nil, fmt.Errorf("faile
