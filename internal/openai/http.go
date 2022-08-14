@@ -31,4 +31,4 @@ func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp
 
 	data, err := io.ReadAll(resp.Body)
 	if err != nil {
-		retur
+		return nil, fmt.Errorf("failed to read t
