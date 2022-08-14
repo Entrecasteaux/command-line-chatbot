@@ -29,4 +29,6 @@ func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp
 	}
 	defer resp.Body.Close()
 
-	data, err := io.ReadAll(resp.Bo
+	data, err := io.ReadAll(resp.Body)
+	if err != nil {
+		retur
