@@ -33,4 +33,5 @@ func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp
 	if err != nil {
 		return nil, fmt.Errorf("failed to read the response body: %w", err)
 	}
-	if resp.StatusCode != http.Status
+	if resp.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("unexpe
