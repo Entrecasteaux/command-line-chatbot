@@ -34,4 +34,5 @@ func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp
 		return nil, fmt.Errorf("failed to read the response body: %w", err)
 	}
 	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("unexpected response code %v: %v", res
+		return nil, fmt.Errorf("unexpected response code %v: %v", resp.StatusCode, string(data))
+	}
