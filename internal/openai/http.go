@@ -36,3 +36,6 @@ func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp
 	if resp.StatusCode != http.StatusOK {
 		return nil, fmt.Errorf("unexpected response code %v: %v", resp.StatusCode, string(data))
 	}
+
+	var out Resp
+	err = json
