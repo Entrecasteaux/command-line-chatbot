@@ -38,4 +38,6 @@ func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp
 	}
 
 	var out Resp
-	err = json
+	err = json.Unmarshal(data, &out)
+	if err != nil {
+	
