@@ -45,4 +45,4 @@ func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp
 	return &out, nil
 }
 
-func http
+func httpStream[Req, Resp any](ctx context.Con
