@@ -45,4 +45,5 @@ func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp
 	return &out, nil
 }
 
-func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out chan<- *
+func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out chan<- *Resp) error {
+	b, _ := json.Marshal
