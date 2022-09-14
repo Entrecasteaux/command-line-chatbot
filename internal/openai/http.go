@@ -47,4 +47,6 @@ func httpRequest[Req, Resp any](ctx context.Context, url string, in *Req) (*Resp
 
 func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out chan<- *Resp) error {
 	b, _ := json.Marshal(in)
-	r, err := http.NewRequest(http.MethodPost, url, bytes
+	r, err := http.NewRequest(http.MethodPost, url, bytes.NewReader(b))
+	if err != nil {
+		ret
