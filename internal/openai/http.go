@@ -49,4 +49,4 @@ func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out cha
 	b, _ := json.Marshal(in)
 	r, err := http.NewRequest(http.MethodPost, url, bytes.NewReader(b))
 	if err != nil {
-		ret
+		return fmt.Errorf("failed to cre
