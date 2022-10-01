@@ -52,4 +52,4 @@ func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out cha
 		return fmt.Errorf("failed to create the request: %w", err)
 	}
 	r.Header.Set("Content-Type", "application/json; charset=UTF-8")
-	r.
+	r.Header.Set("Authorization", fmt.Sprintf("
