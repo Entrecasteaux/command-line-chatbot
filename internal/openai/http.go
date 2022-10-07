@@ -53,4 +53,6 @@ func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out cha
 	}
 	r.Header.Set("Content-Type", "application/json; charset=UTF-8")
 	r.Header.Set("Authorization", fmt.Sprintf("Bearer %s", apiKey))
-	resp, err := http.DefaultClient.Do(r.WithCo
+	resp, err := http.DefaultClient.Do(r.WithContext(ctx))
+	if err != nil {
+		r
