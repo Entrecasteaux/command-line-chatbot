@@ -58,4 +58,5 @@ func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out cha
 		return fmt.Errorf("failed to do the request: %w", err)
 	}
 
-	reader := buf
+	reader := bufio.NewReader(resp.Body)
+	defer 
