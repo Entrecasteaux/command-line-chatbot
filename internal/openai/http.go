@@ -61,4 +61,5 @@ func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out cha
 	reader := bufio.NewReader(resp.Body)
 	defer resp.Body.Close()
 
-	dataPrefix
+	dataPrefix := []byte("data: ")
+	doneSequence := []byt
