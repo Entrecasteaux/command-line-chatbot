@@ -62,4 +62,6 @@ func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out cha
 	defer resp.Body.Close()
 
 	dataPrefix := []byte("data: ")
-	doneSequence := []byt
+	doneSequence := []byte("[DONE]")
+	for {
+		line, e
