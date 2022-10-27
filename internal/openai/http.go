@@ -69,4 +69,5 @@ func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out cha
 			return err
 		}
 
-		line = bytes.T
+		line = bytes.TrimSpace(line)
+		if !bytes.HasPrefi
