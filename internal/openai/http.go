@@ -70,4 +70,4 @@ func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out cha
 		}
 
 		line = bytes.TrimSpace(line)
-		if !bytes.HasPrefi
+		if !bytes.HasPrefix(line, dataPrefix) {
