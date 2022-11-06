@@ -77,4 +77,5 @@ func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out cha
 		if bytes.HasPrefix(line, doneSequence) {
 			break
 		}
-		output := ne
+		output := new(Resp)
+		if err := json.Unmarshal(lin
