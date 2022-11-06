@@ -74,4 +74,7 @@ func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out cha
 			continue
 		}
 		line = bytes.TrimPrefix(line, dataPrefix)
-		if bytes.HasPrefix(line, doneSequenc
+		if bytes.HasPrefix(line, doneSequence) {
+			break
+		}
+		output := ne
