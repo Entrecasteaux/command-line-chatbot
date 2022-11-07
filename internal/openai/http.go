@@ -82,3 +82,6 @@ func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out cha
 			return fmt.Errorf("invalid json stream data: %v", err)
 		}
 		out <- output
+	}
+	return nil
+}
