@@ -79,4 +79,6 @@ func httpStream[Req, Resp any](ctx context.Context, url string, in *Req, out cha
 		}
 		output := new(Resp)
 		if err := json.Unmarshal(line, output); err != nil {
-			return fmt.Errorf("invalid json stream 
+			return fmt.Errorf("invalid json stream data: %v", err)
+		}
+		out <- output
