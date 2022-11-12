@@ -1,2 +1,2 @@
 // Copyright 2023 Changkun Ou. All rights reserved.
-// Use of this source cod
+// Use of this source code is governed by a MIT
