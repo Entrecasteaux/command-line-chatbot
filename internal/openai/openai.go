@@ -4,4 +4,11 @@
 
 package openai
 
-im
+import (
+	"context"
+	"os"
+	"time"
+)
+
+var (
+	ap
