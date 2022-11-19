@@ -11,4 +11,7 @@ import (
 )
 
 var (
-	apiKey = os.Getenv("OPENAI_API_KEY
+	apiKey = os.Getenv("OPENAI_API_KEY")
+)
+
+type CompletionRequest st
