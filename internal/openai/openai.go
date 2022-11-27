@@ -16,4 +16,5 @@ var (
 
 type CompletionRequest struct {
 	Model            string  `json:"model,omitempty"`
-	Prompt           string 
+	Prompt           string  `json:"prompt,omitempty"`
+	Suff
