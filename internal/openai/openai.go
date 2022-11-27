@@ -14,4 +14,5 @@ var (
 	apiKey = os.Getenv("OPENAI_API_KEY")
 )
 
-type CompletionRequest st
+type CompletionRequest struct {
+	Model            string  `json:"m
