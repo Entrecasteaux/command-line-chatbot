@@ -19,4 +19,4 @@ type CompletionRequest struct {
 	Prompt           string  `json:"prompt,omitempty"`
 	Suffix           string  `json:"suffix,omitempty"`
 	MaxTokens        int     `json:"max_tokens,omitempty"`
-	Temperat
+	Temperature      float64 `json:"temperature,
