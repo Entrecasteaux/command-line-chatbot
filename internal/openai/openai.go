@@ -17,4 +17,5 @@ var (
 type CompletionRequest struct {
 	Model            string  `json:"model,omitempty"`
 	Prompt           string  `json:"prompt,omitempty"`
-	Suffix           string  `json:"suffix,omitemp
+	Suffix           string  `json:"suffix,omitempty"`
+	MaxTokens        int  
