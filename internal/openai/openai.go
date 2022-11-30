@@ -18,4 +18,5 @@ type CompletionRequest struct {
 	Model            string  `json:"model,omitempty"`
 	Prompt           string  `json:"prompt,omitempty"`
 	Suffix           string  `json:"suffix,omitempty"`
-	MaxTokens        int  
+	MaxTokens        int     `json:"max_tokens,omitempty"`
+	Temperat
