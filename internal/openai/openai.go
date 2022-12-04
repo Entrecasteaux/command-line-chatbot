@@ -21,4 +21,5 @@ type CompletionRequest struct {
 	MaxTokens        int     `json:"max_tokens,omitempty"`
 	Temperature      float64 `json:"temperature,omitempty"`
 	TopP             float64 `json:"top_p,omitempty"`
-	N                int     `j
+	N                int     `json:"n,omitempty"`
+	Stream        
