@@ -24,4 +24,5 @@ type CompletionRequest struct {
 	N                int     `json:"n,omitempty"`
 	Stream           bool    `json:"stream,omitempty"`
 	LogProbs         int     `json:"logprobs,omitempty"`
-	Echo             bool    `json:"ec
+	Echo             bool    `json:"echo,omitempty"`
+	Stop          
