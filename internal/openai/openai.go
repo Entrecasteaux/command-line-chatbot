@@ -26,4 +26,5 @@ type CompletionRequest struct {
 	LogProbs         int     `json:"logprobs,omitempty"`
 	Echo             bool    `json:"echo,omitempty"`
 	Stop             string  `json:"stop,omitempty"`
-	PresencePenalty  float64 `json:"pres
+	PresencePenalty  float64 `json:"presence_penalty,omitempty"`
+	Frequen
