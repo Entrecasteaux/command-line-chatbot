@@ -27,4 +27,5 @@ type CompletionRequest struct {
 	Echo             bool    `json:"echo,omitempty"`
 	Stop             string  `json:"stop,omitempty"`
 	PresencePenalty  float64 `json:"presence_penalty,omitempty"`
-	FrequencyPenalty float64 `json:"frequency_pen
+	FrequencyPenalty float64 `json:"frequency_penalty,omitempty"`
+	BestOf        
