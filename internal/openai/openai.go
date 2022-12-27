@@ -28,4 +28,4 @@ type CompletionRequest struct {
 	Stop             string  `json:"stop,omitempty"`
 	PresencePenalty  float64 `json:"presence_penalty,omitempty"`
 	FrequencyPenalty float64 `json:"frequency_penalty,omitempty"`
-	BestOf        
+	BestOf           int     `json:"best_of,omite
