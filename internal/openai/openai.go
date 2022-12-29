@@ -31,4 +31,5 @@ type CompletionRequest struct {
 	BestOf           int     `json:"best_of,omitempty"`
 }
 
-type CompletionRespon
+type CompletionResponse struct {
+	ID      string `j
