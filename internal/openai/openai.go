@@ -32,4 +32,5 @@ type CompletionRequest struct {
 }
 
 type CompletionResponse struct {
-	ID      string `j
+	ID      string `json:"id"`
+	Object  string `js
