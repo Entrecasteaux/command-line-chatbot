@@ -36,3 +36,5 @@ type CompletionResponse struct {
 	Object  string `json:"object"`
 	Created int64  `json:"created"`
 	Model   string `json:"model"`
+	Choices []struct {
+		Text  
