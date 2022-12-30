@@ -33,4 +33,5 @@ type CompletionRequest struct {
 
 type CompletionResponse struct {
 	ID      string `json:"id"`
-	Object  string `js
+	Object  string `json:"object"`
+	Created int64  `json:"creat
