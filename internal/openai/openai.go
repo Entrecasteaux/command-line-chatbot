@@ -40,4 +40,6 @@ type CompletionResponse struct {
 		Text         string `json:"text"`
 		Index        int    `json:"index"`
 		LogProbs     int    `json:"logprobs"`
-		FinishReason string `json:"finish_re
+		FinishReason string `json:"finish_reason"`
+	} `json:"choices"`
+	U
