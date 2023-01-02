@@ -38,4 +38,5 @@ type CompletionResponse struct {
 	Model   string `json:"model"`
 	Choices []struct {
 		Text         string `json:"text"`
-		Index        int    `json:"i
+		Index        int    `json:"index"`
+		LogProbs     int    `json:"logpr
