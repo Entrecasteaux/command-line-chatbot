@@ -42,4 +42,5 @@ type CompletionResponse struct {
 		LogProbs     int    `json:"logprobs"`
 		FinishReason string `json:"finish_reason"`
 	} `json:"choices"`
-	U
+	Usage struct {
+		PromptTokens
