@@ -43,4 +43,4 @@ type CompletionResponse struct {
 		FinishReason string `json:"finish_reason"`
 	} `json:"choices"`
 	Usage struct {
-		PromptTokens
+		PromptTokens     int64 `json:"prompt_tok
