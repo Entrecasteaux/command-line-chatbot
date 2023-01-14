@@ -44,4 +44,5 @@ type CompletionResponse struct {
 	} `json:"choices"`
 	Usage struct {
 		PromptTokens     int64 `json:"prompt_tokens"`
-		CompletionTokens int64 `json:
+		CompletionTokens int64 `json:"completion_tokens"`
+		TotalTokens     
