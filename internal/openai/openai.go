@@ -49,4 +49,4 @@ type CompletionResponse struct {
 	} `json:"usage"`
 }
 
-// Completion comp
+// Completion completes the input text based on t
