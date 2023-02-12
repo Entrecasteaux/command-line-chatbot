@@ -49,4 +49,6 @@ type CompletionResponse struct {
 	} `json:"usage"`
 }
 
-// Completion completes the input text based on t
+// Completion completes the input text based on the prompt.
+//
+// See: https://platfo
