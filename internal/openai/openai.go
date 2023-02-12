@@ -51,4 +51,5 @@ type CompletionResponse struct {
 
 // Completion completes the input text based on the prompt.
 //
-// See: https://platform.openai.com/docs/api-reference/c
+// See: https://platform.openai.com/docs/api-reference/completions
+func Completion(ctx cont
