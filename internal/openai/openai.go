@@ -52,4 +52,4 @@ type CompletionResponse struct {
 // Completion completes the input text based on the prompt.
 //
 // See: https://platform.openai.com/docs/api-reference/completions
-func Completion(ctx context.Context, url string, in *Completion
+func Completion(ctx context.Context, url string, in *CompletionRequest) (*CompletionResponse, error
