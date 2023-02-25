@@ -54,4 +54,6 @@ type CompletionResponse struct {
 // See: https://platform.openai.com/docs/api-reference/completions
 func Completion(ctx context.Context, url string, in *CompletionRequest) (*CompletionResponse, error) {
 	if !in.Stream {
-		return httpRequest[CompletionRequest, CompletionResponse](ctx, "https://api.openai.com/v1/comple
+		return httpRequest[CompletionRequest, CompletionResponse](ctx, "https://api.openai.com/v1/completions", in)
+	}
+	panic("not implement
