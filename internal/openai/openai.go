@@ -56,4 +56,8 @@ func Completion(ctx context.Context, url string, in *CompletionRequest) (*Comple
 	if !in.Stream {
 		return httpRequest[CompletionRequest, CompletionResponse](ctx, "https://api.openai.com/v1/completions", in)
 	}
-	panic("not implement
+	panic("not implemented")
+}
+
+type EditRequest struct {
+	
