@@ -60,4 +60,4 @@ func Completion(ctx context.Context, url string, in *CompletionRequest) (*Comple
 }
 
 type EditRequest struct {
-	
+	Model       string  `json:"m
