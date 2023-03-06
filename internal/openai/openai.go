@@ -62,4 +62,5 @@ func Completion(ctx context.Context, url string, in *CompletionRequest) (*Comple
 type EditRequest struct {
 	Model       string  `json:"model"`
 	Input       string  `json:"input"`       // text
-	Instruction string  `json:"instruc
+	Instruction string  `json:"instruction"` // prompt
+	Temperature float64 `j
