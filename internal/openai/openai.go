@@ -63,4 +63,5 @@ type EditRequest struct {
 	Model       string  `json:"model"`
 	Input       string  `json:"input"`       // text
 	Instruction string  `json:"instruction"` // prompt
-	Temperature float64 `j
+	Temperature float64 `json:"temperature"` // creativity
+	N   
