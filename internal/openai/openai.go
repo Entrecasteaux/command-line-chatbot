@@ -68,4 +68,5 @@ type EditRequest struct {
 }
 
 type EditResponse struct {
-	Object  st
+	Object  string `json:"object"`
+	Created 
