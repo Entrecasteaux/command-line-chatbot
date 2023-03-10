@@ -67,3 +67,5 @@ type EditRequest struct {
 	N           int     `json:"n"`
 }
 
+type EditResponse struct {
+	Object  st
