@@ -70,4 +70,5 @@ type EditRequest struct {
 type EditResponse struct {
 	Object  string `json:"object"`
 	Created int64  `json:"created"`
-	Choices []
+	Choices []struct {
+		Text  str
