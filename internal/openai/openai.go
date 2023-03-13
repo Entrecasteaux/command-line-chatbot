@@ -71,4 +71,5 @@ type EditResponse struct {
 	Object  string `json:"object"`
 	Created int64  `json:"created"`
 	Choices []struct {
-		Text  str
+		Text  string `json:"text"`
+		Index int    `jso
