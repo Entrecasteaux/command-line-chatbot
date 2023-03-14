@@ -74,4 +74,5 @@ type EditResponse struct {
 		Text  string `json:"text"`
 		Index int    `json:"index"`
 	} `json:"choices"`
-	Usage
+	Usage struct {
+		PromptTokens     i
