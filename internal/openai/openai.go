@@ -76,3 +76,4 @@ type EditResponse struct {
 	} `json:"choices"`
 	Usage struct {
 		PromptTokens     int64 `json:"prompt_tokens"`
+		CompletionTokens int64 `json:"completi
