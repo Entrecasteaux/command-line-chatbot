@@ -77,4 +77,5 @@ type EditResponse struct {
 	Usage struct {
 		PromptTokens     int64 `json:"prompt_tokens"`
 		CompletionTokens int64 `json:"completion_tokens"`
-		TotalTokens      
+		TotalTokens      int64 `json:"total_tokens"`
+	} `j
