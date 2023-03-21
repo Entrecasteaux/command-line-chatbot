@@ -82,4 +82,5 @@ type EditResponse struct {
 }
 
 type EditOutput struct {
-	Choi
+	Choices []string
+	Created time.Tim
