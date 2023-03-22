@@ -83,4 +83,7 @@ type EditResponse struct {
 
 type EditOutput struct {
 	Choices []string
-	Created time.Tim
+	Created time.Time
+}
+
+// Edit edits the input text base
