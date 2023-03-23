@@ -88,4 +88,5 @@ type EditOutput struct {
 
 // Edit edits the input text based on the prompt.
 //
-// Recommend
+// Recommended model is "text-davinci-edit-001".
+// S
