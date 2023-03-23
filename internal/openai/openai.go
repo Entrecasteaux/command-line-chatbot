@@ -86,4 +86,6 @@ type EditOutput struct {
 	Created time.Time
 }
 
-// Edit edits the input text base
+// Edit edits the input text based on the prompt.
+//
+// Recommend
