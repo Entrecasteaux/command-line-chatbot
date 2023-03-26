@@ -89,4 +89,5 @@ type EditOutput struct {
 // Edit edits the input text based on the prompt.
 //
 // Recommended model is "text-davinci-edit-001".
-// See: https://platform.openai.co
+// See: https://platform.openai.com/docs/api-reference/edits
+func Edit(c
