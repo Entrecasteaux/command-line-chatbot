@@ -91,4 +91,4 @@ type EditOutput struct {
 // Recommended model is "text-davinci-edit-001".
 // See: https://platform.openai.com/docs/api-reference/edits
 func Edit(ctx context.Context, in *EditRequest) (*EditResponse, error) {
-	return httpRequest[EditRequest, EditResp
+	return httpRequest[EditRequest, EditResponse](ctx, "https://api.openai.c
