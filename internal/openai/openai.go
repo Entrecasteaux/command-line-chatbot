@@ -94,4 +94,5 @@ func Edit(ctx context.Context, in *EditRequest) (*EditResponse, error) {
 	return httpRequest[EditRequest, EditResponse](ctx, "https://api.openai.com/v1/edits", in)
 }
 
-type ChatRequest
+type ChatRequest struct {
+	Model            string 
