@@ -96,4 +96,4 @@ func Edit(ctx context.Context, in *EditRequest) (*EditResponse, error) {
 
 type ChatRequest struct {
 	Model            string        `json:"model,omitempty"`
-	
+	Message          []ChatMessage `json:"messages
