@@ -99,4 +99,4 @@ type ChatRequest struct {
 	Message          []ChatMessage `json:"messages"`
 	Temperature      float64       `json:"temperature,omitempty"`
 	TopP             float64       `json:"top_p,omitempty"`
-	
+	N                int           `json:"n,
