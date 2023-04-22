@@ -101,4 +101,4 @@ type ChatRequest struct {
 	TopP             float64       `json:"top_p,omitempty"`
 	N                int           `json:"n,omitempty"`
 	Stream           bool          `json:"stream,omitempty"`
-	Stop             [
+	Stop             []string      `json:"stop,omitem
