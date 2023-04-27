@@ -103,4 +103,4 @@ type ChatRequest struct {
 	Stream           bool          `json:"stream,omitempty"`
 	Stop             []string      `json:"stop,omitempty"`
 	MaxTokens        int           `json:"max_tokens,omitempty"`
-	PresencePenalty  float6
+	PresencePenalty  float64       `json:"presence_penalty,omite
