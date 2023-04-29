@@ -104,4 +104,7 @@ type ChatRequest struct {
 	Stop             []string      `json:"stop,omitempty"`
 	MaxTokens        int           `json:"max_tokens,omitempty"`
 	PresencePenalty  float64       `json:"presence_penalty,omitempty"`
-	FrequencyPenalty float64       `json:"frequency_pena
+	FrequencyPenalty float64       `json:"frequency_penalty,omitempty"`
+}
+
+type ChatMessage str
