@@ -107,4 +107,5 @@ type ChatRequest struct {
 	FrequencyPenalty float64       `json:"frequency_penalty,omitempty"`
 }
 
-type ChatMessage str
+type ChatMessage struct {
+	Role    string `json:"
