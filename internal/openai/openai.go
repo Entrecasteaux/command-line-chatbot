@@ -112,4 +112,5 @@ type ChatMessage struct {
 	Content string `json:"content,omitempty"`
 }
 
-type ChatResp
+type ChatResponse struct {
+	ID      string `json
