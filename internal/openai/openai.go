@@ -113,4 +113,5 @@ type ChatMessage struct {
 }
 
 type ChatResponse struct {
-	ID      string `json
+	ID      string `json:"id"`
+	Object  string `json:"object"`
