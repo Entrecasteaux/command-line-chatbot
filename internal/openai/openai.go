@@ -108,4 +108,5 @@ type ChatRequest struct {
 }
 
 type ChatMessage struct {
-	Role    string `json:"
+	Role    string `json:"role,omitempty"`
+	Content string `jso
