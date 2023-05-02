@@ -115,3 +115,4 @@ type ChatMessage struct {
 type ChatResponse struct {
 	ID      string `json:"id"`
 	Object  string `json:"object"`
+	Created int64  `json:"crea
