@@ -118,4 +118,5 @@ type ChatResponse struct {
 	Created int64  `json:"created"`
 	Choices []struct {
 		Index        int         `json:"index"`
-		Delta        ChatMessage `jso
+		Delta        ChatMessage `json:"delta"`
+		Message      ChatMessa
