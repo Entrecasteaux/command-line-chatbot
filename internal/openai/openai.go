@@ -120,4 +120,4 @@ type ChatResponse struct {
 		Index        int         `json:"index"`
 		Delta        ChatMessage `json:"delta"`
 		Message      ChatMessage `json:"message"`
-		Finish
+		FinishReason string      `json:"
