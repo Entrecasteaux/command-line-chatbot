@@ -119,4 +119,5 @@ type ChatResponse struct {
 	Choices []struct {
 		Index        int         `json:"index"`
 		Delta        ChatMessage `json:"delta"`
-		Message      ChatMessa
+		Message      ChatMessage `json:"message"`
+		Finish
