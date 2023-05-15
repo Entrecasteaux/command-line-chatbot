@@ -123,4 +123,5 @@ type ChatResponse struct {
 		FinishReason string      `json:"finish_reason"`
 	} `json:"choices"`
 	Usage struct {
-		PromptTokens     int64 `json:"prompt_t
+		PromptTokens     int64 `json:"prompt_tokens"`
+		CompletionTokens int64 `jso
