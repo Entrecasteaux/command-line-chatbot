@@ -122,3 +122,5 @@ type ChatResponse struct {
 		Message      ChatMessage `json:"message"`
 		FinishReason string      `json:"finish_reason"`
 	} `json:"choices"`
+	Usage struct {
+		PromptTokens 
