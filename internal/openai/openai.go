@@ -124,4 +124,5 @@ type ChatResponse struct {
 	} `json:"choices"`
 	Usage struct {
 		PromptTokens     int64 `json:"prompt_tokens"`
-		CompletionTokens int64 `jso
+		CompletionTokens int64 `json:"completion_tokens"`
+		TotalToke
