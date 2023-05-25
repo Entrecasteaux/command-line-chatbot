@@ -129,4 +129,5 @@ type ChatResponse struct {
 	} `json:"usage"`
 }
 
-// Chat creates a cha
+// Chat creates a chat request to ChatGPT.
+func Chat(ctx 
