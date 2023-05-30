@@ -131,3 +131,4 @@ type ChatResponse struct {
 
 // Chat creates a chat request to ChatGPT.
 func Chat(ctx context.Context, in *ChatRequest) (<-chan *ChatResponse, <-chan error) {
+	chatEndpoint := "https://api.opena
