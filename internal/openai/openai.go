@@ -133,4 +133,5 @@ type ChatResponse struct {
 func Chat(ctx context.Context, in *ChatRequest) (<-chan *ChatResponse, <-chan error) {
 	chatEndpoint := "https://api.openai.com/v1/chat/completions"
 	ch := make(chan *ChatResponse)
-	errCh :=
+	errCh := make(chan error)
+	go func(
