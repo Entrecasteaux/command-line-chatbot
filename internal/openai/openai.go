@@ -134,4 +134,6 @@ func Chat(ctx context.Context, in *ChatRequest) (<-chan *ChatResponse, <-chan er
 	chatEndpoint := "https://api.openai.com/v1/chat/completions"
 	ch := make(chan *ChatResponse)
 	errCh := make(chan error)
-	go func(
+	go func() {
+		if !in.Stream {
+			resp
