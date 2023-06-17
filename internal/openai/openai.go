@@ -138,4 +138,9 @@ func Chat(ctx context.Context, in *ChatRequest) (<-chan *ChatResponse, <-chan er
 		if !in.Stream {
 			resp, err := httpRequest[ChatRequest, ChatResponse](ctx, chatEndpoint, in)
 			ch <- resp
-			errCh <- e
+			errCh <- err
+			close(ch)
+			close(errCh)
+		}
+
+		errCh
