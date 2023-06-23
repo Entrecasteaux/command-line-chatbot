@@ -146,4 +146,5 @@ func Chat(ctx context.Context, in *ChatRequest) (<-chan *ChatResponse, <-chan er
 		errCh <- httpStream(ctx, chatEndpoint, in, ch)
 		close(errCh)
 	}()
-	
+	return ch, errCh
+}
