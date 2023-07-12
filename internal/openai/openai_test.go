@@ -59,3 +59,17 @@ func TestChat(t *testing.T) {
 		Model:  "gpt-4",
 		Stream: false,
 		Message: []openai.ChatMessage{
+			{
+				Role:    "system",
+				Content: "You are a helpful assistant.",
+			},
+			{
+				Role:    "user",
+				Content: "What can you do?",
+			},
+		},
+	})
+
+	t.Log(<-respCh)
+	t.Log(<-errCh)
+}
