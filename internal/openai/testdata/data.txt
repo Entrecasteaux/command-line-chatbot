@@ -1,1 +1,1 @@
-Human-in-the-loop optimization utilizes human expertise to guide mach
+Human-in-the-loop optimization utilizes human expertise to guide machine optimizers iteratively and
