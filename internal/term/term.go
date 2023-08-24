@@ -58,3 +58,30 @@ func color(r, g, b uint8, foreground bool) []byte {
 
 	// the general case approximates RGB by using the closest color.
 	r6 := ((uint16(r) * 5) / 255)
+	g6 := ((uint16(g) * 5) / 255)
+	b6 := ((uint16(b) * 5) / 255)
+	i := 36*r6 + 6*g6 + b6
+	if foreground {
+		return fgcolors[i]
+	}
+	return bgcolors[i]
+}
+
+func grayscale(scale uint8, foreground bool) ([]byte, bool) {
+	var source [256][]byte
+
+	if foreground {
+		source = fgTermRGB
+	} else {
+		source = bgTermRGB
+	}
+
+	switch scale {
+	case 0x08:
+		return source[232], true
+	case 0x12:
+		return source[233], true
+	case 0x1c:
+		return source[234], true
+	case 0x26:
+		return source[235], true
