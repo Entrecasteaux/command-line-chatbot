@@ -30,3 +30,31 @@ var (
 	after    = []byte("m")
 	reset    = []byte("\033[0;00m")
 	fgcolors = fgTermRGB[16:232]
+	bgcolors = bgTermRGB[16:232]
+)
+
+func fgString(in string, r, g, b uint8) string {
+	return string(fgBytes([]byte(in), r, g, b))
+}
+
+// Bytes colorizes the foreground with the terminal color that matches
+// the closest the RGB color.
+func fgBytes(in []byte, r, g, b uint8) []byte {
+	return colorize(color(r, g, b, true), in)
+}
+
+func colorize(color, in []byte) []byte {
+	return append(append(append(append(before, color...), after...), in...), reset...)
+}
+
+func color(r, g, b uint8, foreground bool) []byte {
+	// if all colors are equal, it might be in the grayscale range
+	if r == g && g == b {
+		color, ok := grayscale(r, foreground)
+		if ok {
+			return color
+		}
+	}
+
+	// the general case approximates RGB by using the closest color.
+	r6 := ((uint16(r) * 5) / 255)
