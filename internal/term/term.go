@@ -85,3 +85,37 @@ func grayscale(scale uint8, foreground bool) ([]byte, bool) {
 		return source[234], true
 	case 0x26:
 		return source[235], true
+	case 0x30:
+		return source[236], true
+	case 0x3a:
+		return source[237], true
+	case 0x44:
+		return source[238], true
+	case 0x4e:
+		return source[239], true
+	case 0x58:
+		return source[240], true
+	case 0x62:
+		return source[241], true
+	case 0x6c:
+		return source[242], true
+	case 0x76:
+		return source[243], true
+	case 0x80:
+		return source[244], true
+	case 0x8a:
+		return source[245], true
+	case 0x94:
+		return source[246], true
+	case 0x9e:
+		return source[247], true
+	case 0xa8:
+		return source[248], true
+	case 0xb2:
+		return source[249], true
+	case 0xbc:
+		return source[250], true
+	case 0xc6:
+		return source[251], true
+	case 0xd0:
+		return source[252], true
