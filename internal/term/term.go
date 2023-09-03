@@ -119,3 +119,37 @@ func grayscale(scale uint8, foreground bool) ([]byte, bool) {
 		return source[251], true
 	case 0xd0:
 		return source[252], true
+	case 0xda:
+		return source[253], true
+	case 0xe4:
+		return source[254], true
+	case 0xee:
+		return source[255], true
+	}
+	return nil, false
+}
+
+var (
+	yellow = fgString("", 252, 140, 3)
+	red    = fgString("", 255, 0, 0)
+	green  = fgString("", 0, 255, 0)
+)
+
+// \033[
+
+var fgTermRGB = [...][]byte{
+	[]byte("38;5;0"),
+	[]byte("38;5;1"),
+	[]byte("38;5;2"),
+	[]byte("38;5;3"),
+	[]byte("38;5;4"),
+	[]byte("38;5;5"),
+	[]byte("38;5;6"),
+	[]byte("38;5;7"),
+	[]byte("38;5;8"),
+	[]byte("38;5;9"),
+	[]byte("38;5;10"),
+	[]byte("38;5;11"),
+	[]byte("38;5;12"),
+	[]byte("38;5;13"),
+	[]byte("38;5;14"),
