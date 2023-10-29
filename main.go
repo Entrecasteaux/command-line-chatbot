@@ -64,3 +64,27 @@ func main() {
 		for {
 			select {
 			case r, ok := <-respCh:
+				if !ok {
+					break streamLoop
+				}
+				if len(r.Choices) == 0 {
+					fmt.Fprint(stdout, "No response. End of the session.")
+					return
+				}
+
+				msg := r.Choices[0].Delta
+				fmt.Fprint(stdout, msg.Content)
+				response.Content += msg.Content
+			case err, ok := <-errCh:
+				if !ok {
+					if err != nil {
+						fmt.Fprintf(stdout, "Error: %v", err)
+					}
+					break streamLoop
+				}
+			}
+		}
+		session = append(session, response)
+		fmt.Fprintf(stdout, "\n")
+	}
+}
