@@ -34,3 +34,33 @@ func main() {
 	}
 
 	for {
+		fmt.Fprint(stdout, term.Orange("User: "))
+		buf := bytes.NewBuffer(nil)
+		_, err := io.Copy(buf, stdin)
+		if err != nil {
+			fmt.Fprintf(stdout, "Error: %v", err)
+			return
+		}
+
+		userMsg := openai.ChatMessage{
+			Role:    "user",
+			Content: buf.String(),
+		}
+		session = append(session, userMsg)
+
+		respCh, errCh := openai.Chat(context.Background(), &openai.ChatRequest{
+			Model:   "gpt-4",
+			Stream:  true,
+			Message: session,
+		})
+
+		response := openai.ChatMessage{
+			Role:    "assistant",
+			Content: "",
+		}
+		fmt.Fprint(stdout, term.Orange("Assistant: "))
+
+	streamLoop:
+		for {
+			select {
+			case r, ok := <-respCh:
