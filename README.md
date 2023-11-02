@@ -1,3 +1,5 @@
 # command-line-chatbot
 
-ChatGPT d
+ChatGPT designed for use in the command line
+
+## U
