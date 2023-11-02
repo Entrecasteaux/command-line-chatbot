@@ -2,4 +2,7 @@
 
 ChatGPT designed for use in the command line
 
-## U
+## Usage
+
+```bash
+$ go install Entrecas
