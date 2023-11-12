@@ -12,4 +12,4 @@ $ command-line-chatbot
 
 ## Example
 
-- Use `<Ctrl+D>` t
+- Use `<Ctrl+D>` to terminate user input. (`Ctrl+Z` + `Enter` i
