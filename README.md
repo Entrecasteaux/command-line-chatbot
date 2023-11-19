@@ -13,4 +13,6 @@ $ command-line-chatbot
 ## Example
 
 - Use `<Ctrl+D>` to terminate user input. (`Ctrl+Z` + `Enter` in windows)
-- Use `<Ctrl+C>` to ter
+- Use `<Ctrl+C>` to terminate the chat session.
+
+```
