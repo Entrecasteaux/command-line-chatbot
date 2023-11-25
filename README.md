@@ -16,3 +16,5 @@ $ command-line-chatbot
 - Use `<Ctrl+C>` to terminate the chat session.
 
 ```
+$ command-line-chatbot
+> Hi, I'm a chatb
