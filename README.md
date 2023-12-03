@@ -17,4 +17,5 @@ $ command-line-chatbot
 
 ```
 $ command-line-chatbot
-> Hi, I'm a chatb
+> Hi, I'm a chatbot. How can I help you?
+> User:
